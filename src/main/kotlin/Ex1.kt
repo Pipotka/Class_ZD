@@ -1,5 +1,4 @@
 import java.lang.Exception
-import java.util.TreeMap
 
 fun main(args: Array<String>) {
     var X = Input("Введите координату X проверяемой точки: ")
@@ -26,19 +25,6 @@ fun main(args: Array<String>) {
 
 }
 
-class Point
-{
-    var X : Double = 0.0
-    var Y : Double = 0.0
-}
-
-class Triangle
-{
-    var FirstPoint : Point = Point()
-    var SecondPoint : Point = Point()
-    var ThirdPoint : Point = Point()
-}
-
 fun Input(message : String) : Double{
     var isCorrect = false
     var result : Double = 0.0
@@ -51,7 +37,7 @@ fun Input(message : String) : Double{
         }
         catch(e : Exception)
         {
-            println("Ввдено неправильное значение. Значение должно быть в десятичном представлении разделённое точкой")
+            print("Значение введено неверно. Дробное значение должно быть в десятичном представлении и разделённое точкой")
         }
     }
     return result
